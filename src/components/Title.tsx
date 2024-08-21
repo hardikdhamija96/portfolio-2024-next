@@ -22,7 +22,7 @@ function Title(props: TitleProps) {
     //   </div> */}
       
     // </div>
-    <div className={`${lspartan.className} text-5xl font-bold text-red-400`}>
+    <div className={`${lspartan.className} flex items-center justify-center text-[3.6rem]  font-bold text-[#0FA3B1] active:text-[#54d6e2] transition-all delay-[120] ease-in-out`}>
         {props.name}
       </div>
   );

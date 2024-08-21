@@ -3,7 +3,7 @@ import { Inter,League_Spartan } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 
-const inter = Inter({ subsets: ["latin"] });
+// const inter = Inter({ subsets: ["latin"] });
 const lspartan = League_Spartan({ weight: "400", subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -20,7 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={lspartan.className}>
         <Navbar />
-        <main className="max-w-5xl mx-auto">{children}</main>
+        <main className="max-w-5xl mx-auto min-h-[88vh]">{children}</main>
       </body>
     </html>
   );
