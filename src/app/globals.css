@@ -50,3 +50,6 @@
     --mistyBlue : 207, 224, 234 ;
 } 
 
+*{
+    @apply transition-colors duration-75;
+}
