@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
-import { Inter,League_Spartan } from "next/font/google";
+import { Inter, League_Spartan } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
+import Navbar2 from "@/components/Navbar2";
+import { relative } from "path";
 
 // const inter = Inter({ subsets: ["latin"] });
 const lspartan = League_Spartan({ weight: "400", subsets: ["latin"] });
@@ -17,10 +18,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={lspartan.className}>
-        <Navbar />
-        <main className="max-w-5xl mx-auto min-h-[88vh]">{children}</main>
+    <html lang="en" className="w-full h-full">
+      <body className="gray w-full h-full">
+        <section className="relative w-full h-full bg-darkBg">
+          <Navbar2 />
+          <main
+            className={`${lspartan.className} relative z-0 h-full w-full`}>
+            {children}
+          </main>
+        </section>
       </body>
     </html>
   );
