@@ -5,6 +5,7 @@ import Title from "./Title";
 import { Icon } from "@iconify/react";
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
+import ThemeSwitcher from "./ThemeSwitcher";
 
 const Navbar2 = () => {
   const [showMenu, setShowMenu] = useState(true);
@@ -42,14 +43,15 @@ const Navbar2 = () => {
               icon={showMenu ? "jam:menu" : "jam:close"}
             />
           </div>
+          
         </section>
-        <section className="w-full sm:px-10 ">
+        <section className="w-full sm:px-10">
           {showMenu ? (
             <></>
           ) : (
-            <div className="w-full">
+            <div className="w-full max-h-[80vh] min-h-[80vh]">
               <p className="absolute text-babyBlue2 -rotate-90 top-[16.6rem] sm:left-10 text-3xl">Menu</p>
-              <ul className="flex flex-col pt-16 gap-1 min-h-[80vh] max-w-full sm:max-w-7xl mx-auto bg-darkBg pl-20 md:pl-10">
+              <ul className="flex flex-col pt-16 gap-1 max-w-full sm:max-w-7xl mx-auto bg-darkBg pl-20 md:pl-10">
                 {navItems.map((item) => (
                   <li key={item.path}>
                     <Link href={item.path} onClick={() => setShowMenu(true)}>
@@ -66,6 +68,7 @@ const Navbar2 = () => {
                   </li>
                 ))}
               </ul>
+              <ThemeSwitcher/>
             </div>
           )}
         </section>
