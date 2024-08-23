@@ -2,3 +2,51 @@
 @tailwind components;
 @tailwind utilities;
 
+.blue {
+    --lightBg : 237, 242, 243;
+    --darkBg : 31, 53, 65;
+    --darkBlue : 12, 45, 72;
+    --babyBlue : 177, 212, 224;
+    --midnightBlue : 20, 93, 160;
+    --babyBlue2 : 175, 216, 242;
+    --blueGrotto : 82, 137, 181;
+    --ivory : 236, 236, 235;
+    --mistyBlue : 183, 207, 220;
+}
+
+.dark {
+    --lightBg : 237, 242, 243;
+    --darkBg : 1, 15, 11;
+    --darkBlue : 12, 45, 72;
+    --babyBlue : 177, 212, 224;
+    --midnightBlue : 20, 93, 160;
+    --babyBlue2 : 253, 232, 147;
+    --blueGrotto : 244, 235, 208;
+    --ivory : 214, 173, 96;
+    --mistyBlue : 182, 141, 64;
+}
+
+.light {
+    --lightBg : 237, 242, 243;
+    --darkBg : 245, 245, 245;
+    --darkBlue : 12, 45, 72;
+    --babyBlue : 177, 212, 224;
+    --midnightBlue : 20, 93, 160;
+    --babyBlue2 : 49, 14, 51;
+    --blueGrotto : 97, 54, 89;
+    --ivory : 103, 31, 90;
+    --mistyBlue : 110, 56, 100;
+}
+
+.gray {
+    --lightBg : 237, 242, 243;
+    --darkBg : 68, 68, 76;
+    --darkBlue : 12, 45, 72;
+    --babyBlue : 177, 212, 224;
+    --midnightBlue : 20, 93, 160;
+    --babyBlue2 : 176, 183, 192;
+    --blueGrotto : 233, 234, 236;
+    --ivory : 192, 192, 192;
+    --mistyBlue : 207, 224, 234 ;
+} 
+
