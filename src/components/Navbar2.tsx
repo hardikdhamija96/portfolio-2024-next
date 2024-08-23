@@ -28,7 +28,7 @@ const Navbar2 = () => {
   ];
 
   return (
-    <main className="absolute z-[100] w-full bg-darkBg">
+    <main className="absolute z-[1000] w-full bg-darkBg">
       <nav className="max-h-full w-full">
         <section className="min-h-[15vh] sm:min-h-[20vh] flex justify-between items-center max-w-7xl mx-auto bg-darkBg px-4 max-h-[15vh]">
           <Link href={"/"}>
@@ -45,7 +45,7 @@ const Navbar2 = () => {
           </div>
           
         </section>
-        <section className="w-full sm:px-10">
+        <section className="w-full sm:px-10 bg-darkBg">
           {showMenu ? (
             <></>
           ) : (
