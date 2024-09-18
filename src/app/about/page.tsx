@@ -15,7 +15,7 @@ export default function AboutPage() {
     <div className="bg-darkBg absolute h-full z-[-10] w-full px-2">
       <div className="h-full max-w-7xl mx-auto flex flex-col justify-center items-center px-4">
         <p
-          className={`${montSerrat.className} sm:text-xl text-headingColor pb-4 sm:mt-[16vh] mt-[4vh] text-left md:text-2xl`}>
+          className={`${montSerrat.className} sm:text-xl text-headingColor pb-4 sm:mt-[16vh] mt-[8vh] text-left md:text-2xl`}>
           Hi, I&apos;m Hardik Dhamija, a <span className="font-semibold">Software Developer</span> specializing in <span className="font-semibold">React </span>
           with a growing interest in full-stack development. I create modern,
           responsive web applications using technologies such as React, Next.js,

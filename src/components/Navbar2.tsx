@@ -30,7 +30,7 @@ const Navbar2 = () => {
   return (
     <main className="absolute z-[1000] w-full bg-darkBg">
       <nav className="max-h-full w-full">
-        <section className="min-h-[15vh] sm:min-h-[20vh] flex justify-between items-center max-w-7xl mx-auto bg-darkBg px-4 max-h-[15vh]">
+        <section className="min-h-[12vh] sm:min-h-[20vh] flex justify-between items-center max-w-7xl mx-auto bg-darkBg px-4 sm:max-h-[15vh]">
           <Link href={"/"}>
             <Title name="HD" />
           </Link>
@@ -39,7 +39,7 @@ const Navbar2 = () => {
             aria-label={showMenu ? "Open Menu" : "Close Menu"}
             onClick={handleMenuChange}>
             <Icon
-              className="text-headingColor text-[5rem] cursor-pointer active:text-[3.6rem]"
+              className="text-headingColor text-[4rem] cursor-pointer active:text-[3.6rem]"
               icon={showMenu ? "jam:menu" : "jam:close"}
             />
           </div>
