@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="w-full h-full" suppressHydrationWarning>
-      <body className={`w-full h-full`}>
+      <body className={`w-full h-full overflow-clip`}>
         <Providers defaultTheme="dark" enableColorScheme themes={['dark', 'light', 'blue', 'gray']}>
           <section className="relative w-full h-full bg-darkBg">
             <Navbar2 />
