@@ -1,4 +1,5 @@
 import { Barlow_Condensed, Montserrat, Lato } from "next/font/google";
+import Link from "next/link";
 const barlowCondensed = Barlow_Condensed({ weight: "500", subsets: ["latin"] });
 const montSerrat = Montserrat({ weight: ["300","400","500","700"], subsets: ["latin"] });
 const lato = Lato({
@@ -21,12 +22,13 @@ export default function Home() {
           WEB-DEVELOPER
         </h1> */}
         <div className="py-5 w-full flex flex-row justify-center gap-3 items-center">
-          <button className={`${lato.className} py-2.5 px-5 me-2 font-medium text-headingColor focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-darkBlue focus:z-10 focus:ring-4 focus:ring-gray-100`}>View My Work</button>
-          <button className={`${lato.className} py-2.5 px-5 me-2 font-medium text-headingColor focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-darkBlue focus:z-10 focus:ring-4 focus:ring-gray-100`}>Get in Touch</button>
+          <button className={`${lato.className} py-2.5 px-5 me-2 font-medium text-headingColor focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-darkBlue focus:z-10 focus:ring-4 focus:ring-gray-100`}><Link href={"/project"}>View My Work</Link></button>
+          <button className={`${lato.className} py-2.5 px-5 me-2 font-medium text-headingColor focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-darkBlue focus:z-10 focus:ring-4 focus:ring-gray-100`}><Link href={"/contact"}>Get in Touch</Link></button>
           
         </div>
 
         <div className="flex flex-col gap-3 py-4 w-full justify-center items-center text-green-500 text-2xl font-bold"><span className="text-green-500">Available for hiring!</span><span> Can join Immediately</span></div>
+        
       </div>
     </div>
   );
